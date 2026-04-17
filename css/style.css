@@ -22,6 +22,10 @@ body {
     text-align: center;
 
 }
+#perfil{
+    display: flex;
+    justify-content:center;
+}
 
 .perfil {
     border-radius: 50%;
