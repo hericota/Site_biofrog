@@ -13,7 +13,7 @@ body {
 .hero {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
         url('/img/sapo_heroi.jpg') center/cover;
-    height: 650px;
+    height: 850px;
     display: flex;
     flex-direction: column;
     align-items: normal;
@@ -22,32 +22,41 @@ body {
     text-align: center;
 
 }
-#perfil{
+
+#perfil {
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
 }
 
 .perfil {
+    display: flex;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 40%;
+    align-self: center;
+    justify-content: center;
 }
-.perfil h2{
-    margin-left: 100px;
+.perfil figure img:hover{
+    transition: transform scale(1.1) ease;
+    content: url('/img/perfil_olhoaberto.png');
+}
+
+.perfil h2 {
     margin-top: 20px;
 }
+
 .perfil figcaption {
-    padding: 8px;
     font-size: x-large;
-    margin-right: 65%;
 }
-#titulo{
+
+#titulo {
     display: flex;
     font-size: xx-large;
     justify-content: center;
+    align-self: center;
 }
 
-#galeria{
+#galeria {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
@@ -65,8 +74,8 @@ body {
     height: 200px;
     object-fit: cover;
     display: block;
-    transition: scale(1.06);
     opacity: .82;
+    justify-self: center;
 }
 
 #galeria figure {
@@ -106,6 +115,27 @@ nav {
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: large;
+    font-size: x-large;
     margin: 20px;
+}
+nav a:hover{
+    color: #d1cece;
+}
+
+#texto {
+    background-color: #272727;
+    margin: 20px;
+    border-radius: 20%;
+}
+
+#texto figcaption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+#texto:hover{
+    transition:scale(1.50) 4s ease;
+}
+#texto:hover figcaption{
+    color: #ffffff;
 }
