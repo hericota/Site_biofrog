@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://github.com/hericota" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub</a>
+
+            <!-- Âncora -->
+            <a href="index.html">Ver galeria</a>
+
+            <!-- E-mail -->
+            <a href="mailto:henriquegdall@email.com"><i class="fa-solid fa-envelope"></i>E-mail</a>
+
+            <!-- Telefone -->
+            <a href="tel:+5547933221566"><i class="fa-solid fa-phone"></i>Ligar</a>
+        </nav>
+        <section class="hero">
+            <h1>Biofrog</h1> <!--Hero-->
+            <p>Contato</p>
+        </section>
+    </header>
+    <main>
+        <form action="obrigado.html" method="get">
+            <fieldset>
+                <legend id="titulo_form">Dados pessoais</legend>
+                <div class="campo">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="3">
+                    <div class="campo">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="seilaoque@gmail.com">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="email" required placeholder="(11) 99999-9999">
+                    </div>
+                </div>
+                <fieldset>
+                    <legend id="titulo_form">Mensagem</legend>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione o assunto</option>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="suporte">Suporte técnico</option>
+                        <option value="parceria">Parceria</option>
+                    </select>
+
+                    <textarea id="mensagem" name="mensagem" rows="5" minlength="20" required
+                        placeholder="Descreva seu projeto...">
+                    </textarea>
+
+                    <div id="termos">
+                        <label for="termos">Li e concordo com os  <a href="termos.html" target="_blank">Termos de
+                                Uso .</a></label>
+                        <input type="checkbox" id="termos" name="termos" required>
+                    </div>
+
+
+                    <br><br>
+                </fieldset>
+                <div>
+                    <input class="Botoes" type="submit" value="Enviar">
+                    <input class="Botoes" type="reset">
+                </div>
+            </fieldset>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Dia</th>
+                        <th scope="col">Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seg–Sex</td>
+                        <td>8h–18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>9h–13h</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Domingo: fechado</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </main>
+</body>
+
+</html>

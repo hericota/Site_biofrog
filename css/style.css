@@ -22,9 +22,10 @@ body {
     text-align: center;
 
 }
-#perfil{
+
+#perfil {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 .perfil {
@@ -32,22 +33,25 @@ body {
     object-fit: cover;
     margin-left: 40%;
 }
-.perfil h2{
+
+.perfil h2 {
     margin-left: 100px;
     margin-top: 20px;
 }
+
 .perfil figcaption {
     padding: 8px;
     font-size: x-large;
     margin-right: 65%;
 }
-#titulo{
+
+#titulo {
     display: flex;
     font-size: xx-large;
     justify-content: center;
 }
 
-#galeria{
+#galeria {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
@@ -108,4 +112,81 @@ nav a {
     text-decoration: none;
     font-size: large;
     margin: 20px;
+}
+
+#titulo_2 {
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.contato_buttom {
+    width: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contato_buttom a {
+    background-color: green;
+    border-radius: 100px;
+    font-size: xx-large;
+    size: 105%;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7C3AED;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, .15);
+}
+
+fieldset legend {
+    display: flex;
+    font-size: xx-large;
+    margin: auto;
+}
+
+#campo {
+    margin: 100px;
+}
+
+table {
+    justify-self: center;
+}
+
+#termos {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#termos input{
+    width:20px;
+}
+
+#Botoes {
+    margin: auto;
+    background-color: #000000;
+}
+
+.titulo_form {
+    display: flex;
+    font-size: xx-large;
+    margin: auto;
 }
